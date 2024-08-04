@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Build and Push Docker Image') {
       environment {
-        DOCKER_IMAGE = "aashritha322/ultimate-cicd:${BUILD_NUMBER}"
+        DOCKER_IMAGE = "aashritha322/maven-aashritha-docker-agent:${BUILD_NUMBER}"
         // DOCKERFILE_LOCATION = "ci-cd.EndToEnd/spring-boot-app/Dockerfile"
         REGISTRY_CREDENTIALS = credentials('docker-cred')
       }
