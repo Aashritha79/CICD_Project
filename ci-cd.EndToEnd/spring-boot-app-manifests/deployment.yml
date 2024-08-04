@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: aashritha322/ultimate-cicd:replaceImageTag
+        image: aashritha322/maven-aashritha-docker-agent:replaceImageTag
         ports:
         - containerPort: 8080
